@@ -24,8 +24,6 @@ h3{
 h4{
     margin: 20px 0;
 }
-
-
 .container{
     height: 450px;
     width: 600px;
@@ -39,12 +37,10 @@ h4{
 .container-sup{
     padding: 40px;
 }
-
 .container-sup > p{
     font-size: 15px;
     color: hsl(218, 22%, 67%);
 }
-
 .container-buttom{
     display: flex;
     width: 100%;
@@ -82,16 +78,8 @@ button{
     border: none;
     background-color: hsl(71, 73%, 54%);
     color: white;
-    box-shadow: .1rem .2rem .9rem rgba(0, 0, 0, 0.416);
+    box-shadow: .1rem .2rem .6rem rgba(0, 0, 0, 0.243);
 }
-button:hover{
-    background-color: hsl(71, 73%, 58%);
-    font-weight: 700;
-}
-
-
-
-
 .container-us{
     width: 50%;
     padding: 20px 30px;
@@ -109,11 +97,90 @@ button:hover{
     margin-bottom: 3px;
     color: rgba(255, 255, 255, 0.661);
 }
+footer{
+    margin: 1rem 0;
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
 
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+@media only screen and (max-width:375px) { 
+    body{
+        margin-top: 4rem;
+    }
+    h1{
+        margin-bottom: 10px;
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    h4{
+        margin: 0;
+    }
+    .container{
+        height: 790px;
+        width: 355px;
+    }
+    .container-sup{
+        height: 40%;
+        padding: 30px;
+    }
+    .container-buttom{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-price{
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        border-bottom-left-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .text{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .price{
+        margin-bottom: 0;
+    }
+    .text > p{
+        margin-bottom: 0;
+    }
+    button{
+        padding: .9rem 8rem;
+    }
+    .container-us{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-text{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+    .container-text > h4{
+        margin-bottom: 10px;
+    }
+    
+}
